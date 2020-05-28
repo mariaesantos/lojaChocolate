@@ -21,7 +21,12 @@ public class Cliente {
 	@NotNull
 	private String nome;
 	
+	@Column(name = "usuario", length = 16)
+	@NotNull
+	private String usuario;
+	
 	@Column(name = "senha")
 	@NotNull
 	private String senha;
+	
 }
