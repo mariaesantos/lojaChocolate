@@ -7,5 +7,7 @@ import com.web.lojaChocolate.model.Empresa;
 
 @Repository
 public interface EmpresaRepository extends JpaRepository<Empresa, Long>{
-
+	
+	public Empresa findByNome(String nome);
+	
 }

@@ -7,5 +7,6 @@ import com.web.lojaChocolate.model.Marca;
 
 @Repository
 public interface MarcaRepository extends JpaRepository<Marca, Long>{
-
+	
+	public Marca findByNome(String nome);
 }
