@@ -81,12 +81,6 @@ export default {
           caption: 'Compre seus chocolates',
           icon: 'shopping_cart',
           routeName: 'chocolates'
-        },
-        {
-          title: 'Sair',
-          caption: 'Saia da aplicação',
-          icon: 'power_settings_new',
-          routeName: '#'
         }
       ]
     }
