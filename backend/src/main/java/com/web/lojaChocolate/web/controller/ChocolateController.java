@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.web.lojaChocolate.dto.ChocolateDTO;
+import com.web.lojaChocolate.mapper.ChocolateMapper;
 import com.web.lojaChocolate.model.Chocolate;
 import com.web.lojaChocolate.service.ChocolateService;
 
@@ -23,10 +25,13 @@ public class ChocolateController {
 	@Autowired
 	private ChocolateService chocolateService;
 	
+	@Autowired
+	private ChocolateMapper chocolateMapper;
+	
 	@GetMapping
-	public List<Chocolate> get() {
+	public List<ChocolateDTO> get() {
 		try {
-			return chocolateService.findAll();
+			return chocolateMapper.domainToDtoList(chocolateService.findAll());
 		} catch (Exception e) {
 			throw e;
 		}

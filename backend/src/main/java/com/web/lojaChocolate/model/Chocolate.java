@@ -37,4 +37,8 @@ public class Chocolate {
 	@NotNull
 	private Long tipoId;
 	
+	@Column(name = "tamanho")
+	@NotNull
+	private Long tamanho;
+	
 }

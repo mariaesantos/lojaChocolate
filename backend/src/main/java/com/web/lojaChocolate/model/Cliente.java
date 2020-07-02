@@ -29,4 +29,42 @@ public class Cliente {
 	@NotNull
 	private String senha;
 	
+	@Column(name = "documento")
+	@NotNull
+	private String documento;
+	
+	@Column(name = "celular")
+	@NotNull
+	private String celular;
+	
+	@Column(name = "telefone")
+	private String telefone;
+	
+	@Column(name = "email")
+	@NotNull
+	private String email;
+	
+	@Column(name = "endereco")
+	@NotNull
+	private String endereco;
+	
+	@Column(name = "complemento")
+	private String complemento;
+
+	@Column(name = "bairro")
+	@NotNull
+	private String bairro;
+	
+	@Column(name = "uf")
+	@NotNull
+	private String uf;
+	
+	@Column(name = "municipio")
+	@NotNull
+	private String municipio;
+	
+	@Column(name = "cep")
+	@NotNull
+	private String cep;
+	
 }
